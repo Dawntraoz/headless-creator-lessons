@@ -1,4 +1,6 @@
-# Nuxt Storyblok Boilerplate
+# Focus on Storyblok Lessons
+
+This repository contains the lessons taught in the Focus on Storyblok course by Alba Silvente at [Headless Creator](https://www.headlesscreator.com).
 
 > To get better understanding of this project and how it works, read our [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs) article.
 

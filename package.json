@@ -1,6 +1,6 @@
 {
-  "name": "vue-nuxt-storyblok-boilerplate",
-  "version": "1.0.0",
+  "name": "headless-creator-lessons",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",

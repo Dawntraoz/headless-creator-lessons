@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Oswald:wght@300&display=swap');
+
+*:focus-visible {
+  @apply block outline-none border-b-2 border-purple-700 pb-1;
+}

@@ -4,14 +4,14 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-5min-storyblok',
+    title: 'Focus on Storyblok Lessons - Alba Silvente',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'These lessons are part of the Focus on Storyblok course in Headless Creator.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -20,6 +20,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -28,7 +29,13 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: [
+    '~/components',
+    '~/components/atoms',
+    '~/components/molecules',
+    '~/components/organisms',
+    '~/components/templates',
+  ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
@@ -43,7 +50,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: '432cQ9VTZJMlxGzBORHWSwtt',
+        accessToken: process.env.STORYBLOK_TOKEN,
         cacheProvider: 'memory'
       }
     ],

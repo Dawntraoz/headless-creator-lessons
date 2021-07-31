@@ -1,10 +1,15 @@
 import Vue from 'vue'
-import Page from '~/components/Page.vue'
-import Teaser from '~/components/Teaser.vue'
-import Grid from '~/components/Grid.vue'
-import Feature from '~/components/Feature.vue'
 
-Vue.component('page', Page)
+import Teaser from '~/components/molecules/Teaser.vue'
+import Feature from '~/components/molecules/Feature.vue'
+
+import Grid from '~/components/organisms/Grid.vue'
+
+import Page from '~/components/templates/Page.vue'
+import Lesson from '~/components/templates/Lesson.vue'
+
 Vue.component('teaser', Teaser)
-Vue.component('grid', Grid)
 Vue.component('feature', Feature)
+Vue.component('grid', Grid)
+Vue.component('page', Page)
+Vue.component('lesson', Lesson)
