@@ -1,12 +1,7 @@
 <template>
-  <ul
-    v-editable="blok"
-    class="flex py-8 mb-6">
-    <li
-      :key="blok._uid"
-      v-for="blok in blok.columns"
-      class="flex-auto px-6">
-      <component :blok="blok" :is="blok.component" />
+  <ul v-editable="blok" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <li v-for="blok in blok.columns" :key="blok._uid">
+      <component :blok="blok" :is="blok.component" class="h-full" />
     </li>
   </ul>
 </template>

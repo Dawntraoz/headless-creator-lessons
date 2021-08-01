@@ -1,26 +1,27 @@
 <template>
-  <header class="py-10 border-b-2 border-gray-100 font-bold">
-    <nav class="container mx-auto px-4 flex items-center justify-between">
-      <a href="https://www.headlesscreator.com/" target="_blank" class="w-min">
+  <header role="banner" class="py-5 md:py-10 border-b-2 border-gray-100 font-bold">
+    <nav aria-label="header-navigation" class="container mx-auto px-4 flex items-center justify-between">
+      <a href="https://www.headlesscreator.com/" target="_blank" rel="noopener noreferrer" class="w-min">
         Headless Creator
       </a>
-      <p
+      <nuxt-link to="/"
         class="
           text-lg
           tracking-widest
           uppercase
           text-center
           w-min
-          text-emerald-600
+          text-emerald-700
         "
       >
         Storyblok Lessons
-      </p>
+      </nuxt-link>
       <ul class="flex items-center gap-4">
         <li>
           <a
             href="https://twitter.com/dawntraoz"
             target="_blank"
+            rel="noopener noreferrer"
             class="text-blue-400"
           >
             <svg
@@ -28,6 +29,7 @@
               viewBox="4 4 16 16"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Alba Silvente's Twitter profile @dawntraoz.</title>
               <path
                 d="M9.31 18.25C14.7819 18.25 17.7744 13.4403 17.7744 9.26994C17.7744 9.03682 17.9396 8.83015 18.152 8.73398C18.8803 8.40413 19.8249 7.49943 18.8494 5.97828C18.2031 6.32576 17.6719 6.51562 16.9603 6.74448C15.834 5.47393 13.9495 5.41269 12.7514 6.60761C11.9785 7.37819 11.651 8.52686 11.8907 9.62304C9.49851 9.49618 6.69788 7.73566 5.1875 5.76391C4.39814 7.20632 4.80107 9.05121 6.10822 9.97802C5.63461 9.96302 5.1716 9.82741 4.75807 9.58305V9.62304C4.75807 11.1255 5.75654 12.4191 7.1444 12.7166C6.70672 12.8435 6.24724 12.8622 5.80131 12.771C6.19128 14.0565 7.87974 15.4989 9.15272 15.5245C8.09887 16.4026 6.79761 16.8795 5.45806 16.8782C5.22126 16.8776 4.98504 16.8626 4.75 16.8326C6.11076 17.7588 7.69359 18.25 9.31 18.2475V18.25Z"
                 fill="currentColor"
@@ -39,7 +41,8 @@
           <a
             href="https://www.dawntraoz.com/"
             target="_blank"
-            class="text-purple-400"
+            rel="noopener noreferrer"
+            class="text-emerald-400"
           >
             <svg
               class="w-5 h-5"
@@ -47,6 +50,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Alba Silvente's Website: dawntraoz.com</title>
               <path
                 fill-rule="evenodd"
                 clip-rule="evenodd"

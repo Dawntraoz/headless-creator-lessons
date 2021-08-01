@@ -4,6 +4,7 @@
     class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-lesson"
   >
     <nav
+      aria-label="sidebar-navigation"
       class="flex md:flex-col items-center md:items-start gap-6 pt-6 md:pt-24"
     >
       <span class="font-bold uppercase">Lessons</span>
@@ -35,15 +36,16 @@
               year: "numeric",
             })
           }}
-          <span class="block w-2 h-2 rounded-full bg-purple-500 mx-2"></span>
+          <span class="block w-2 h-2 rounded-full bg-emerald-500 mx-2"></span>
           <a
             :href="blok.lesson_link.url"
             target="_blank"
-            class="text-purple-700"
+            rel="noopener noreferrer"
+            class="text-emerald-700"
             >Link to lesson</a
           >
         </p>
-        <h1 class="font-bold text-4xl md:text-6xl leading-light">
+        <h1 class="font-bold text-4xl md:text-6xl leading-light md:leading-light">
           {{ story.name }}
         </h1>
       </header>
@@ -55,11 +57,12 @@
         md:border-t-0 md:border-l-2
         border-gray-100
         py-6
+        md:pl-12
         md:py-32
-        md:pl-20
+        lg:pl-20
       "
     >
-      <span class="block w-4 h-4 rounded-full bg-purple-700 mb-6"></span>
+      <span class="block w-4 h-4 rounded-full bg-emerald-700 mb-6"></span>
       <div v-if="quotesParsed" v-html="quotesParsed" class="lesson-quotes" />
     </aside>
   </div>

@@ -11,7 +11,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'These lessons are part of the Focus on Storyblok course in Headless Creator.' }
+      { hid: 'description', name: 'description', content: 'These lessons are part of the Focus on Storyblok course in Headless Creator.' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://focus-on-storyblok.dawntraoz.com/focus-storyblok-lessons-alba-silvente.jpg',
+      },
+      {
+        hid: 'og:publish_date',
+        name: 'publish_date',
+        property: 'og:publish_date',
+        content: '2021-08-02T00:00:00-0500',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
