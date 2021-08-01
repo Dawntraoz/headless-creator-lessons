@@ -55,7 +55,20 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      Montserrat: {
+        wght: [500, 700]
+      },
+      Oswald: {
+        wght: [300]
+      },
+    },
+    display: 'swap'
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
