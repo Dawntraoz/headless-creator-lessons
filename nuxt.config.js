@@ -39,7 +39,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/components'
+    '~/plugins/components', '~/plugins/composition-api.js', '~/plugins/rich-text-renderer.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -61,7 +61,8 @@ export default {
   googleFonts: {
     families: {
       Montserrat: {
-        wght: [500, 700]
+        wght: [400, 500, 700],
+        ital: [400]
       },
       Oswald: {
         wght: [300]

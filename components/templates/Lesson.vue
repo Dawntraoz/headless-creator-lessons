@@ -5,7 +5,7 @@
   >
     <nav
       aria-label="sidebar-navigation"
-      class="flex md:flex-col items-center md:items-start gap-6 pt-6 md:pt-24"
+      class="flex md:flex-col items-center md:items-start gap-6 pt-6 md:pt-20"
     >
       <span class="font-bold uppercase">Lessons</span>
       <ul
@@ -26,7 +26,7 @@
         </li>
       </ul>
     </nav>
-    <article class="py-8 md:py-12">
+    <article class="py-8 md:pt-16 md:pb-12 md:pr-6">
       <header>
         <p class="flex items-center text-xs pb-4 md:pt-4 text-gray-500">
           {{
@@ -49,7 +49,9 @@
           {{ story.name }}
         </h1>
       </header>
-      <div v-if="contentParsed" v-html="contentParsed" />
+      <div v-if="blok.lesson_content" class="py-6 lesson-content">
+        <rich-text-renderer :document="blok.lesson_content" />
+      </div>
     </article>
     <aside
       class="
@@ -58,7 +60,7 @@
         border-gray-100
         py-6
         md:pl-12
-        md:py-32
+        md:py-24
         lg:pl-20
       "
     >
@@ -108,6 +110,23 @@ export default {
 .nuxt-link-exact-active {
   @apply text-gray-900;
 }
+
+/* Lesson Content */
+.lesson-content blockquote {
+  @apply border-l-2 border-gray-200 pl-6 italic font-normal text-gray-500 text-base leading-relaxed mb-4;
+}
+.lesson-content blockquote::before {
+  content: '';
+  @apply block w-4 h-4 bg-emerald-500 rounded-full mb-4;
+}
+.lesson-content h2 {
+  @apply font-bold text-gray-900 text-3xl mb-4;
+}
+.lesson-content p {
+  @apply pb-4 text-gray-500 leading-relaxed;
+}
+
+/* Lesson Quotes */
 .lesson-quotes p {
   @apply pb-4 text-xs text-gray-500 leading-loose;
 }
