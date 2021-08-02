@@ -113,17 +113,32 @@ export default {
 
 /* Lesson Content */
 .lesson-content blockquote {
-  @apply border-l-2 border-gray-200 pl-6 italic font-normal text-gray-500 text-base leading-relaxed mb-4;
+  @apply border-l-2 border-gray-200 pl-6 italic font-normal text-gray-500 text-sm md:text-base leading-relaxed mb-4;
 }
 .lesson-content blockquote::before {
   content: '';
   @apply block w-4 h-4 bg-emerald-500 rounded-full mb-4;
 }
 .lesson-content h2 {
-  @apply font-bold text-gray-900 text-3xl mb-4;
+  @apply font-bold text-gray-900 text-2xl md:text-3xl mb-4;
+}
+.lesson-content b {
+  @apply font-bold text-gray-900;
 }
 .lesson-content p {
-  @apply pb-4 text-gray-500 leading-relaxed;
+  @apply font-normal pb-4 text-gray-500 leading-relaxed;
+}
+.lesson-content ul {
+  @apply pl-4 list-disc;
+}
+.lesson-content pre {
+  @apply block px-4 overflow-x-auto bg-gray-100;
+}
+.lesson-content p > code {
+  @apply py-1;
+}
+.lesson-content code {
+  @apply bg-gray-100 text-emerald-900 leading-tight font-mono px-1;
 }
 
 /* Lesson Quotes */
