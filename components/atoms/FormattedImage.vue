@@ -42,9 +42,9 @@ export default {
       const imageService = '//img2.storyblok.com/';
       let path = image.replace('https://a.storyblok.com', '');
       path = path.replace('//a.storyblok.com', '');
-      let format = ''
+      let format = '/filters:format(webp)';
       if (process.client) {
-        format = !this.canUseWebP() ? '' : '/filters:format(webp)'
+        format = !this.canUseWebP() ? '' : '/filters:format(webp)';
       }
       return imageService + option + format + path;
     }
