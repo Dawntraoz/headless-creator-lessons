@@ -129,7 +129,7 @@ export default {
   @apply font-normal pb-4 text-gray-500 leading-relaxed;
 }
 .lesson-content ul {
-  @apply pl-4 list-disc;
+  @apply pl-4 list-disc pb-4;
 }
 .lesson-content pre {
   @apply block px-4 overflow-x-auto bg-gray-100;
