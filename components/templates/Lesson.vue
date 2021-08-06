@@ -88,9 +88,6 @@ export default {
     };
   },
   computed: {
-    contentParsed() {
-      return this.$storyapi.richTextResolver.render(this.blok.lesson_content);
-    },
     quotesParsed() {
       return this.$storyapi.richTextResolver.render(this.blok.lesson_quotes);
     },
@@ -138,7 +135,7 @@ export default {
   @apply py-1;
 }
 .lesson-content a {
-  @apply text-emerald-600 underline;
+  @apply text-emerald-700 underline;
 }
 .lesson-content code {
   @apply bg-gray-100 text-emerald-900 leading-tight font-mono px-1;
