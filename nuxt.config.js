@@ -47,6 +47,8 @@ export default {
   components: [
     '~/components',
     '~/components/atoms',
+    '~/components/atoms/lesson-1',
+    '~/components/atoms/lesson-2',
     '~/components/molecules',
     '~/components/organisms',
     '~/components/templates',
