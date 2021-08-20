@@ -13,7 +13,7 @@ module.exports = {
         '2xl': '1280px',
       },
       gridTemplateColumns: {
-        'lesson': '.5fr 2fr 1fr',
+        'lesson': 'minmax(0,.5fr) minmax(0,2fr) minmax(0,1fr)',
       },
       lineHeight: {
         'light': '1.15',
