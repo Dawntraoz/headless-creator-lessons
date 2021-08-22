@@ -73,5 +73,24 @@ export default {
         }
       });
   },
+  head() {
+    return {
+      title: this.story.name,
+      meta: [
+        ...this.$addMetaData({
+          title: this.story.name,
+          description: this.story.content.excerpt,
+          url: this.story.full_slug === 'home' ? '' : this.story.full_slug,
+          image: this.story.content.shared_image?.filename,
+        }),
+        {
+          hid: 'og:publish_date',
+          name: 'publish_date',
+          property: 'og:publish_date',
+          content: this.story.first_published_at,
+        },
+      ],
+    }
+  },
 };
 </script>
