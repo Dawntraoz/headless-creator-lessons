@@ -1,6 +1,7 @@
 <template>
   <figure class="py-2 mb-4">
     <img
+      class="mx-auto"
       :src="transformImage(body.image.filename, body.size)"
       :width="body.size.split('x')[0]"
       :height="body.size.split('x')[1]"
