@@ -85,7 +85,15 @@ export default {
         cacheProvider: 'memory'
       }
     ],
+    '@nuxtjs/sitemap',
   ],
+
+  // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
+  sitemap: {
+    hostname: 'https://focus-on-storyblok.dawntraoz.com',
+    gzip: true,
+    trailingSlash: true,
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
