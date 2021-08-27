@@ -24,7 +24,12 @@ module.exports = {
       },
       colors: {
         emerald: colors.emerald
-      }
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: []
+        }
+      }),
     },
   },
   variants: {
