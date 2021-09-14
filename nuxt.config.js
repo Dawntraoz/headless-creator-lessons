@@ -86,6 +86,7 @@ export default {
       }
     ],
     '@nuxtjs/sitemap',
+    '@nuxtjs/feed',
   ],
 
   // Sitemap module configuration: https://sitemap.nuxtjs.org/guide/configuration
@@ -94,6 +95,45 @@ export default {
     gzip: true,
     trailingSlash: true,
   },
+
+  // Feed module configuration: https://www.npmjs.com/package/@nuxtjs/feed#configuration
+  feed: [
+    {
+      path: '/feed.xml',
+      async create(feed) {
+        feed.options = {
+          title: "Storyblok Lessons at Headless Creator",
+          link: 'https://focus-on-storyblok.dawntraoz.com/feed.xml',
+          description: "These lessons are part of the Focus on Storyblok course in Headless Creator.",
+        }
+    
+        const lessons = (await axios.get(
+          `https://api.storyblok.com/v2/cdn/stories?starts_with=lessons&token=${process.env.STORYBLOK_TOKEN}`
+        )).data.stories;
+  
+        /* START - Go through the array of lessons (stories) */
+        lessons.forEach((lesson) => {
+          const url = `https://focus-on-storyblok.dawntraoz.com/${lesson.full_slug}`
+          feed.addItem({
+            title: lesson.name,
+            id: url,
+            link: url,
+            description: lesson.content.excerpt,
+            published: new Date(lesson.first_published_at),
+            author: [
+              {
+                name: 'Alba Silvente Fuentes',
+                email: 'unicorn@dawntraoz.com',
+              },
+            ],
+          })
+        })
+        /* END */
+      },
+      cacheTime: 1000 * 60 * 15,
+      type: 'rss2',
+    },
+  ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
