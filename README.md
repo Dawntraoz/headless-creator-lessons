@@ -7,6 +7,9 @@ This repository contains the lessons taught in the Focus on Storyblok course by 
 ## Latest Focus on Storyblok Lessons  
 
 <!-- BLOG-POST-LIST:START -->
+- [Creating an RSS Feed Using Nuxt and Storyblok](https://focus-on-storyblok.dawntraoz.com/lessons/creating-an-rss-feed-using-nuxt-and-storyblok)
+- [Rich Text Storyblok Field with TailwindCSS](https://focus-on-storyblok.dawntraoz.com/lessons/rich-text-storyblok-field-with-tailwindcss)
+- [Improving Web Performance using the Image Service CDN](https://focus-on-storyblok.dawntraoz.com/lessons/improving-web-performance-using-the-image-service-cdn)
 <!-- BLOG-POST-LIST:END -->
 
 ## Resources
