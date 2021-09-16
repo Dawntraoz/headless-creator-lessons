@@ -4,6 +4,11 @@ This repository contains the lessons taught in the Focus on Storyblok course by 
 
 > To get better understanding of this project and how it works, read our [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs) article.
 
+## Latest Focus on Storyblok Lessons  
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
 ## Resources
 
 Visit our technology [Nuxt Technology Hub](https://www.storyblok.com/tc/nuxtjs) for more tutorials and videos how to use Storyblok together with Vue.js and Nuxt.
