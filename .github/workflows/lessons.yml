@@ -1,0 +1,21 @@
+name: Lessons
+
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [master]
+  # Run workflow automatically
+  schedule:
+    # Runs every hour
+    - cron: "0 * * * *"
+
+jobs:
+  update-readme-with-blog:
+    name: Update this repo's README with the list of articles
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
+        with:
+          # comma-separated list of RSS feed urls
+          feed_list: "https://focus-on-storyblok.dawntraoz.com/feed.xml"

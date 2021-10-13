@@ -4,6 +4,14 @@ This repository contains the lessons taught in the Focus on Storyblok course by 
 
 > To get better understanding of this project and how it works, read our [Add a headless CMS to Nuxt in 5 minutes](https://www.storyblok.com/tp/headless-cms-nuxtjs) article.
 
+## Latest Focus on Storyblok Lessons  
+
+<!-- BLOG-POST-LIST:START -->
+- [Creating an RSS Feed Using Nuxt and Storyblok](https://focus-on-storyblok.dawntraoz.com/lessons/creating-an-rss-feed-using-nuxt-and-storyblok)
+- [Rich Text Storyblok Field with TailwindCSS](https://focus-on-storyblok.dawntraoz.com/lessons/rich-text-storyblok-field-with-tailwindcss)
+- [Improving Web Performance using the Image Service CDN](https://focus-on-storyblok.dawntraoz.com/lessons/improving-web-performance-using-the-image-service-cdn)
+<!-- BLOG-POST-LIST:END -->
+
 ## Resources
 
 Visit our technology [Nuxt Technology Hub](https://www.storyblok.com/tc/nuxtjs) for more tutorials and videos how to use Storyblok together with Vue.js and Nuxt.
