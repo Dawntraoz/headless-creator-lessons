@@ -47,7 +47,7 @@ export default {
         ? "home"
         : context.route.path;
     const version =
-      context.query._storyblok || context.isDev ? "draft" : "published";
+      context.query._storyblok || context.isDev || process.env.NUXT_TARGET_ENV === 'staging' ? "draft" : "published";
 
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi
