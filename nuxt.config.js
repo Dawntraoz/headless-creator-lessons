@@ -79,7 +79,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     [
-      'storyblok-nuxt',
+      '@storyblok/nuxt',
       {
         accessToken: process.env.STORYBLOK_TOKEN,
         cacheProvider: 'memory'

@@ -100,6 +100,7 @@ export default {
     const res = await this.$storyapi.get("cdn/stories", {
       version: this.isDev ? "draft" : "published",
       starts_with: "lessons/",
+      excluding_slugs: "lessons/",
       sort_by: "first_published_at:asc",
     });
     this.lessons = res.data.stories;
